@@ -85,81 +85,16 @@
 			
 			
 					<ul class="nav ace-nav">
-						<li class="grey dropdown-modal">
-							<a data-toggle="dropdown" class="dropdown-toggle" href="#">
-								<i class="ace-icon fa fa-tasks"></i>
-								<span class="badge badge-grey">4</span>
+						
+						<li class="badge badge-grey dropdown-modal">
+							<a data-toggle="dropdown" href="#" class="dropdown-toggle">
+								<i class="ace-icon fa fa-pencil-square-o"></i>
+								<span class="user-info">
+
+									<small>Nuevo</small>
+									Anuncio
+								</span>
 							</a>
-
-							<ul class="dropdown-menu-right dropdown-navbar dropdown-menu dropdown-caret dropdown-close">
-								<li class="dropdown-header">
-									<i class="ace-icon fa fa-check"></i>
-									4 Tasks to complete
-								</li>
-
-								<li class="dropdown-content">
-									<ul class="dropdown-menu dropdown-navbar">
-										<li>
-											<a href="#">
-												<div class="clearfix">
-													<span class="pull-left">Software Update</span>
-													<span class="pull-right">65%</span>
-												</div>
-
-												<div class="progress progress-mini">
-													<div style="width:65%" class="progress-bar"></div>
-												</div>
-											</a>
-										</li>
-
-										<li>
-											<a href="#">
-												<div class="clearfix">
-													<span class="pull-left">Hardware Upgrade</span>
-													<span class="pull-right">35%</span>
-												</div>
-
-												<div class="progress progress-mini">
-													<div style="width:35%" class="progress-bar progress-bar-danger"></div>
-												</div>
-											</a>
-										</li>
-
-										<li>
-											<a href="#">
-												<div class="clearfix">
-													<span class="pull-left">Unit Testing</span>
-													<span class="pull-right">15%</span>
-												</div>
-
-												<div class="progress progress-mini">
-													<div style="width:15%" class="progress-bar progress-bar-warning"></div>
-												</div>
-											</a>
-										</li>
-
-										<li>
-											<a href="#">
-												<div class="clearfix">
-													<span class="pull-left">Bug Fixes</span>
-													<span class="pull-right">90%</span>
-												</div>
-
-												<div class="progress progress-mini progress-striped active">
-													<div style="width:90%" class="progress-bar progress-bar-success"></div>
-												</div>
-											</a>
-										</li>
-									</ul>
-								</li>
-
-								<li class="dropdown-footer">
-									<a href="#">
-										See tasks with details
-										<i class="ace-icon fa fa-arrow-right"></i>
-									</a>
-								</li>
-							</ul>
 						</li>
 
 						<li class="purple dropdown-modal">
@@ -376,6 +311,8 @@
 								</li>
 							</ul>
 						</li>
+
+						
 					</ul>
 				</div>
 			</div><!-- /.navbar-container -->
@@ -754,10 +691,10 @@
 
 						<div class="page-header">
 							<h1>
-								Todos
+								Nuevo anuncio
 								<small>
 									<i class="ace-icon fa fa-angle-double-right"></i>
-									todos &amp; ultimos
+									Registro
 								</small>
 							</h1>
 							
@@ -766,129 +703,80 @@
 						<div class="row">
 							<div class="col-xs-12">
 								<!-- PAGE CONTENT BEGINS -->						
-								
-								<form class="form-horizontal" role="form">
-									
-									<div class="form-group">
-										<label class="col-sm-3 control-label no-padding-right" for="form-field-1-1"> Titulo del anuncio </label>
+								<div class="widget-box">
+									<div class="widget-header">
+										<h4 class="widget-title">Registra tu anuncio...</h4>
+									</div>
 
-										<div class="col-sm-9">
-											<input type="text" id="form-field-1-1" placeholder="Titulo del anuncio" class="form-control" />
+									<div class="widget-body">
+										<div class="widget-main no-padding">
+											<form>
+												<!-- <legend>Form</legend> -->
+												<fieldset>
+													<div class="form-group">
+														<label class="col-sm-3 control-label no-padding-right" for="form-field-1-1"> Titulo del anuncio </label>
+
+														<div class="col-sm-9">
+															<input type="text" id="form-field-1-1" placeholder="Titulo del anuncio" class="form-control" />
+														</div>
+													</div>
+													
+													<br></br>
+													
+													<div class="form-group">
+														<label class="col-sm-3 control-label no-padding-right" for="form-field-1"> Telefono </label>
+
+														<div class="col-sm-9">
+															<input type="text" id="form-field-1" placeholder="919585859" class="col-xs-10 col-sm-5" />
+														</div>
+													</div>
+												
+													<br></br>
+
+
+													<div class="form-group">
+														<label class="col-sm-3 control-label no-padding-right" for="form-field-1"> Descripción del anuncio </label>
+
+														<div class="col-sm-9">
+															<textarea class="form-control" id="form-field-8" placeholder="Descripción del anuncio"></textarea>
+														</div>
+													</div>
+													
+													<br></br>
+													<br></br>
+
+													<div class="form-group">
+														<label class="col-sm-3 control-label no-padding-right" for="form-field-1"> Agregar una imagen </label>
+
+														<div class="col-sm-9">
+															<input name="file" type="file" multiple="" />
+														</div>
+													</div>
+													
+												</fieldset>
+												
+												
+
+												
+												<div class="form-actions center">
+													<button class="btn btn-info" type="button">
+															<i class="ace-icon fa fa-check bigger-110"></i>
+															Publicar
+														</button>
+
+														&nbsp; &nbsp; &nbsp;
+														<button class="btn" type="reset">
+															<i class="ace-icon fa fa-undo bigger-110"></i>
+															Limpiar
+														</button>
+												</div>
+
+											</form>
 										</div>
 									</div>
 
-									<div class="space-4"></div>
 
-									<div class="form-group">
-										<label class="col-sm-3 control-label no-padding-right" for="form-field-2"> Password Field </label>
-
-										<div class="col-sm-9">
-											<input type="password" id="form-field-2" placeholder="Password" class="col-xs-10 col-sm-5" />
-											<span class="help-inline col-xs-12 col-sm-7">
-												<span class="middle">Inline help text</span>
-											</span>
-										</div>
-									</div>
-
-									<div class="space-4"></div>
-
-									<div class="form-group">
-										<label class="col-sm-3 control-label no-padding-right" for="form-input-readonly"> Readonly field </label>
-
-										<div class="col-sm-9">
-											<input readonly="" type="text" class="col-xs-10 col-sm-5" id="form-input-readonly" value="This text field is readonly!" />
-											<span class="help-inline col-xs-12 col-sm-7">
-												<label class="middle">
-													<input class="ace" type="checkbox" id="id-disable-check" />
-													<span class="lbl"> Disable it!</span>
-												</label>
-											</span>
-										</div>
-									</div>
-
-									<div class="space-4"></div>
-
-									<div class="form-group">
-										<label class="col-sm-3 control-label no-padding-right" for="form-field-4">Relative Sizing</label>
-
-										<div class="col-sm-9">
-											<input class="input-sm" type="text" id="form-field-4" placeholder=".input-sm" />
-											<div class="space-2"></div>
-
-											<div class="help-block" id="input-size-slider"></div>
-										</div>
-									</div>
-
-									<div class="form-group">
-										<label class="col-sm-3 control-label no-padding-right" for="form-field-5">Grid Sizing</label>
-
-										<div class="col-sm-9">
-											<div class="clearfix">
-												<input class="col-xs-1" type="text" id="form-field-5" placeholder=".col-xs-1" />
-											</div>
-
-											<div class="space-2"></div>
-
-											<div class="help-block" id="input-span-slider"></div>
-										</div>
-									</div>
-
-									<div class="form-group">
-										<label class="col-sm-3 control-label no-padding-right">Input with Icon</label>
-
-										<div class="col-sm-9">
-											<span class="input-icon">
-												<input type="text" id="form-field-icon-1" />
-												<i class="ace-icon fa fa-leaf blue"></i>
-											</span>
-
-											<span class="input-icon input-icon-right">
-												<input type="text" id="form-field-icon-2" />
-												<i class="ace-icon fa fa-leaf green"></i>
-											</span>
-										</div>
-									</div>
-
-									<div class="space-4"></div>
-
-									<div class="form-group">
-										<label class="col-sm-3 control-label no-padding-right" for="form-field-6">Tooltip and help button</label>
-
-										<div class="col-sm-9">
-											<input data-rel="tooltip" type="text" id="form-field-6" placeholder="Tooltip on hover" title="Hello Tooltip!" data-placement="bottom" />
-											<span class="help-button" data-rel="popover" data-trigger="hover" data-placement="left" data-content="More details." title="Popover on hover">?</span>
-										</div>
-									</div>
-
-									<div class="space-4"></div>
-
-									<div class="form-group">
-										<label class="col-sm-3 control-label no-padding-right" for="form-field-tags">Tag input</label>
-
-										<div class="col-sm-9">
-											<div class="inline">
-												<input type="text" name="tags" id="form-field-tags" value="Tag Input Control" placeholder="Enter tags ..." />
-											</div>
-										</div>
-									</div>
-
-									<div class="clearfix form-actions">
-										<div class="col-md-offset-3 col-md-9">
-											<button class="btn btn-info" type="button">
-												<i class="ace-icon fa fa-check bigger-110"></i>
-												Submit
-											</button>
-
-											&nbsp; &nbsp; &nbsp;
-											<button class="btn" type="reset">
-												<i class="ace-icon fa fa-undo bigger-110"></i>
-												Reset
-											</button>
-										</div>
-									</div>
-									
-								</form>
-
+								</div>
 								
 								<!-- PAGE CONTENT ENDS -->
 							</div><!-- /.col -->
@@ -930,81 +818,5 @@
 
 		<!-- basic scripts -->
 
-		<!--[if !IE]> -->
-		<script src="assets/js/jquery-2.1.4.min.js"></script>
-
-		<!-- <![endif]-->
-
-		<!--[if IE]>
-<script src="assets/js/jquery-1.11.3.min.js"></script>
-<![endif]-->
-		<script type="text/javascript">
-			if('ontouchstart' in document.documentElement) document.write("<script src='assets/js/jquery.mobile.custom.min.js'>"+"<"+"/script>");
-		</script>
-		<script src="assets/js/bootstrap.min.js"></script>
-
-		<!-- page specific plugin scripts -->
-
-		<!-- ace scripts -->
-		<script src="assets/js/ace-elements.min.js"></script>
-		<script src="assets/js/ace.min.js"></script>
-
-		<!-- inline scripts related to this page -->
-		<script type="text/javascript">
-			jQuery(function($) {
-			 var $sidebar = $('.sidebar').eq(0);
-			 if( !$sidebar.hasClass('h-sidebar') ) return;
-			
-			 $(document).on('settings.ace.top_menu' , function(ev, event_name, fixed) {
-				if( event_name !== 'sidebar_fixed' ) return;
-			
-				var sidebar = $sidebar.get(0);
-				var $window = $(window);
-			
-				//return if sidebar is not fixed or in mobile view mode
-				var sidebar_vars = $sidebar.ace_sidebar('vars');
-				if( !fixed || ( sidebar_vars['mobile_view'] || sidebar_vars['collapsible'] ) ) {
-					$sidebar.removeClass('lower-highlight');
-					//restore original, default marginTop
-					sidebar.style.marginTop = '';
-			
-					$window.off('scroll.ace.top_menu')
-					return;
-				}
-			
-			
-				 var done = false;
-				 $window.on('scroll.ace.top_menu', function(e) {
-			
-					var scroll = $window.scrollTop();
-					scroll = parseInt(scroll / 4);//move the menu up 1px for every 4px of document scrolling
-					if (scroll > 17) scroll = 17;
-			
-			
-					if (scroll > 16) {			
-						if(!done) {
-							$sidebar.addClass('lower-highlight');
-							done = true;
-						}
-					}
-					else {
-						if(done) {
-							$sidebar.removeClass('lower-highlight');
-							done = false;
-						}
-					}
-			
-					sidebar.style['marginTop'] = (17-scroll)+'px';
-				 }).triggerHandler('scroll.ace.top_menu');
-			
-			 }).triggerHandler('settings.ace.top_menu', ['sidebar_fixed' , $sidebar.hasClass('sidebar-fixed')]);
-			
-			 $(window).on('resize.ace.top_menu', function() {
-				$(document).triggerHandler('settings.ace.top_menu', ['sidebar_fixed' , $sidebar.hasClass('sidebar-fixed')]);
-			 });
-			
-			
-			});
-		</script>
 	</body>
 </html>
